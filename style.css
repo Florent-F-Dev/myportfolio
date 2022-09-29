@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/RobotoMono/RobotoMono-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('font/ds_digital/DS-DIGI.TTF'),
+        url('font/ds_digital/DS-DIGIB.TTF'),
+        url('font/ds_digital/DS-DIGII.TTF'),
+        url('font/ds_digital/DS-DIGIT.TTF');
+}
+body{
+    padding-top: 55px;
+    font-family: 'Roboto';
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 100%);
+    overflow-x: hidden;
+}
+h1, h3{
+    font-family: 'DS-Digital';
+}
+.section-title{
+    background-image: url("./img/synth-city.jpg");
+    background-position-y: center;
+}
+.title-2{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+.hover:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+.hover{
+    transition: transform 0.2s;
+}
+.hover-img:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+.hover-img{
+    transition: transform 0.2s;
+}
+a{
+    text-decoration: none;
+}
+.card, .card-header, li, .card-body{
+    border-style: none;
+}
+.progress-bar{
+    background: linear-gradient(90deg, rgba(24,63,63,1) 0%, rgba(24,70,104,1) 100%); 
+}
+.color-title{
+    color: #8FE3CF;
+}
+.gradient-title{
+    background: -webkit-linear-gradient(left, rgba(24,63,63,1) 0%, rgba(24,70,104,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section{
+    animation: appear 0.7s linear;
+}
+.screen{
+    min-height: calc(100vh - 55px);
+}
+@keyframes appear {
+    from{
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(75%);
+        opacity: 0.2;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
